@@ -31,7 +31,7 @@ for i in setfontfamily:
 
 fontfamily=st.selectbox("Choose Font",allfonts)
 
-fontsize=st.number_input("Set Font Size",min_value=1,max_value=45,value=20)
+fontsize=st.number_input("Set Font Size",min_value=1,value=20)
 
 font_color=st.selectbox("Choose Font Color",colors,key=1)
 
