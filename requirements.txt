@@ -1,3 +1,2 @@
-PIL
+Pillow
 streamlit
-textwrap
