@@ -63,7 +63,7 @@ if btn:
         draw=ImageDraw.Draw(img)
 
         font_name=f'{setfontfamily[fontfamily]}'
-        fontPath=os.getcwd()+r"\fonts"+f'\{font_name}'
+        fontPath =os.path.join(os.getcwd(), "fonts", font_name)
         font=ImageFont.truetype(fontPath,fontsize)
 
         if(spaceleft=='Yes'):
