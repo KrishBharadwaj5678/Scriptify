@@ -54,8 +54,13 @@ text=st.text_area("Enter Text for Handwritten Display")
 
 textWidth=st.number_input("Specify Text Width",min_value=1,value=100)
 
+if 'load_state' not in st.session_state:
+    st.session_state.load_state=False
+
 btn=st.button("Create")
-if btn:
+if btn or st.session_state.load_state:
+    st.session_state.load_state=True
+    
     if(len(text)==0):
         st.warning('Text field cannot be empty.')
     else:
