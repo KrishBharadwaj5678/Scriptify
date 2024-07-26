@@ -16,6 +16,7 @@ st.write("<h2 style='color:lightgreen;'>Transform Your Text into Handwriting.</h
 colors = ["black","white","red","green","blue","yellow","cyan","magenta","gray","lightgray","darkgray","brown","purple","orange","pink","lime","teal","navy","maroon","olive","silver","gold"]
 
 setfontfamily={
+    'Scratchy Lemon':'Scratchy_Lemon.otf',
     'Aileron Regular':'Aileron-Regular.otf',
     'Aileron Italic':'Aileron-Italic.otf',
     'Aileron Bold':'Aileron-Bold.otf',
@@ -23,7 +24,26 @@ setfontfamily={
     'ArimaKoshi Regular':'ArimaKoshi-Regular.otf',
     'Driscutty Signature':'Driscutty_Signature.otf',
     'Workforce Sans':'WorkforceSans.otf',
-    'Scratchy Lemon':'Scratchy_Lemon.otf'
+    'The Sunday':'The_Sunday.otf',
+    'Milestone Brush':'MilestoneBrush.otf',
+    'MilkyVintage Regular':'MilkyVintage-Regular.ttf',
+    'Darlothes Grunge':'Darlothes_Grunge.otf',
+    'Shortcake':'Shortcake.otf',
+    'Monkey Magic':'Monkey_Magic.ttf',
+    'Break Brush':'BreakBrush.ttf',
+    'Uncared':'Uncared.ttf',
+    'Regular Day':'RegularDay.ttf',
+    'Makes Request':'Makes_Request.otf',
+    'BeastEnergy Regular':'BeastEnergy-Regular.otf',
+    'Bernita':'Bernita.ttf',
+    'Jocker Block':'JockerBlock.ttf',
+    'Holiday Start':'HolidayStart.ttf',
+    'Baby Girly':'BabyGirly.ttf',
+    'Valentiny':'Valentiny.ttf',
+    'Beauty Heart Sans':'BeautyHeartSans.otf',
+    'Stone Crusher':'Stonecrusher.otf',
+    'Signature In Card':'SignatureInCard.otf',
+    'Royal Banks':'RoyalBanks.otf'
 }
 
 for i in setfontfamily:
@@ -60,7 +80,7 @@ if 'load_state' not in st.session_state:
 btn=st.button("Create")
 if btn or st.session_state.load_state:
     st.session_state.load_state=True
-    
+
     if(len(text)==0):
         st.warning('Text field cannot be empty.')
     else:
